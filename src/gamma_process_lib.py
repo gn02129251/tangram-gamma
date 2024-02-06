@@ -25,6 +25,9 @@ def gamma_correction(img: ArrayLike, gamma: float) -> ArrayLike:
 
     Returns:
         ArrayLike: The gamma-corrected image.
+
+    Note:
+        corrected_val = (val / 255)**gamma * 255
     """
     if not gamma >= 0:
         raise ValueError("The gamma value should be equal to or greater than zero.")
