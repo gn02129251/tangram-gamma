@@ -12,7 +12,7 @@ Topic: This module includes a template class for application development.
 import tkinter as tk
 
 
-class App(tk.TK):
+class App(tk.Tk):
     def __init__(self, title, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.title(title)
